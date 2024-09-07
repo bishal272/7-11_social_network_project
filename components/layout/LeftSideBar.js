@@ -1,5 +1,7 @@
 import { SignedIn, SignOutButton, UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
+
+import { Logout } from "@mui/icons-material";
 import Menu from "./Menu";
 
 export default async function LeftSideBar() {
@@ -39,7 +41,10 @@ export default async function LeftSideBar() {
         </div>
         <SignedIn>
           <SignOutButton>
-            <button className="text-body-bold text-light-1 flex items-center gap-3">Log Out</button>
+            <button className="text-body-bold text-light-1 flex items-center gap-3">
+              <Logout sx={{ color: "white", fontSize: "30px" }} />
+              Log Out
+            </button>
           </SignOutButton>
         </SignedIn>
       </div>
