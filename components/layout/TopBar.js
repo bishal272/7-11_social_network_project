@@ -1,6 +1,6 @@
 "use client";
 import { SignedIn, SignOutButton } from "@clerk/nextjs";
-import { Logout, Search } from "@mui/icons-material";
+import { Search } from "@mui/icons-material";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -23,9 +23,7 @@ export default function TopBar({ user }) {
       </button>
       <SignedIn>
         <SignOutButton>
-          <button className="text-body-bold text-light-1 flex  md:hidden">
-            <Logout sx={{ color: "white", fontSize: "25px" }} />
-          </button>
+          <button className="text-body-bold text-light-1 flex  md:hidden">Logout</button>
         </SignOutButton>
       </SignedIn>
       <Link href={"/"}>
