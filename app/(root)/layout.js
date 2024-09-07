@@ -1,3 +1,4 @@
+import ButtomBar from "@/components/layout/ButtomBar";
 import LeftSideBar from "@/components/layout/LeftSideBar";
 import MainContainer from "@/components/layout/MainContainer";
 import RightSideBar from "@/components/layout/RightSideBar";
@@ -16,8 +17,8 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`${inter.className} bg-purple-2 text-light-1`}>
-          <main className="flex flex-row">
+        <body className={`${inter.className} bg-purple-2 text-light-1 min-h-screen`}>
+          <main className="flex flex-row w-full justify-between">
             <SignedOut>
               <SignInButton>
                 <div className="flex items-center justify-center h-screen w-screen">
@@ -33,7 +34,7 @@ export default function RootLayout({ children }) {
               <RightSideBar />
             </SignedIn>
           </main>
-          {/* <ButtomBar /> */}
+          <ButtomBar />
         </body>
       </html>
     </ClerkProvider>

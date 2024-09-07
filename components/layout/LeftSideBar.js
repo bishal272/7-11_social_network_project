@@ -10,24 +10,24 @@ export default async function LeftSideBar() {
   return (
     <div className="h-screen left-0 top-0 sticky overflow-auto px-10 py-6 flex flex-col gap-6 max-md:hidden custom-scrollbar">
       <div className="flex flex-col gap-2 my-3">
-        <div className="flex flex-col gap-2 items-center text-light-1 my-2">
+        <div className="flex flex-col gap-2 items-center text-light-1 my-2 ">
           <div className="rounded-3xl overflow-hidden">
             <img src={user?.imageUrl} alt="" width={50} height={50} />
           </div>
           <p className="text-small-bold text-light-1">{user?.username}</p>
         </div>
-        <div className="flex justify-between text-light-1 gap-2">
+        <div className="flex justify-between text-light-1 gap-2 my-3">
           <div className="flex flex-col items-center">
             <p className="text-base-bold">1</p>
-            <p className="text-tiny-medium">Posts</p>
+            <p className="text-subtle-medium">Posts</p>
           </div>
           <div className="flex flex-col items-center">
             <p className="text-base-bold">1</p>
-            <p className="text-tiny-medium">Followers</p>
+            <p className="text-subtle-medium">Followers</p>
           </div>
           <div className="flex flex-col items-center">
             <p className="text-base-bold">1</p>
-            <p className="text-tiny-medium">Following</p>
+            <p className="text-subtle-medium">Following</p>
           </div>
         </div>
         <hr />
@@ -45,7 +45,7 @@ export default async function LeftSideBar() {
               Log Out
             </button>
           </SignOutButton>
-        </SignedIn>{" "}
+        </SignedIn>
       </div>
     </div>
   );
