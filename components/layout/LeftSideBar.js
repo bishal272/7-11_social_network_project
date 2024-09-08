@@ -3,7 +3,8 @@ import { SignedIn, SignOutButton, UserButton, useUser } from "@clerk/nextjs";
 
 import { Logout } from "@mui/icons-material";
 import { useEffect, useState } from "react";
-import Loader from "../loader";
+
+import Loader from "../Loader";
 import Menu from "./Menu";
 
 export default function LeftSideBar() {
